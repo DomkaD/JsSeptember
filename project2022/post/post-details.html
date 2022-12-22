@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        p{
+            color: black;
+            font-family: "Trebuchet MS", Verdana, sans-serif;
+        }
+        .post{
+            text-align: center;
+            margin: 20px;
+            width: 100%;
+            color: white;
+            background: rgb(34,193,195);
+            background: linear-gradient(0deg, rgb(94, 150, 255) 32%, rgba(253,118,45,1) 76%);
+            border: 4px solid black;
+            font-size: 20px;
+        }
+        .comments{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .comment{
+            width: 80%;
+            text-align: center;
+            margin: 20px;
+            display: grid;
+            grid-template-columns:repeat(2, 500px);
+            grid-gap: 10px;
+            padding: 10px 15px;
+            background: rgb(34,193,195);
+            background: linear-gradient(0deg, rgb(94, 150, 255) 32%, rgba(253,212,45,1) 76%);
+            color: black;
+            border: 4px solid black;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="post"></div>
+
+<div class="comments"></div>
+
+<script src="post-details.js"></script>
+
+</body>
+</html>

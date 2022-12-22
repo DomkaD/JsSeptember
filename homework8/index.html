@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 8</title>
+</head>
+<body>
+<script>
+
+    //- Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+    //створити пустий масив, наповнити його 10 об'єктами new User(....)
+    //    function User(id, name, surname , email, phone) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.surname = surname;
+    //     this.email = email;
+    //     this.phone = phone
+    // }
+    // let user1 = new User(1,'user1','user_1','user1@gmail.com', 111);
+    // let user2 = new User(2,'user2','user_2','user2@gmail.com', 222);
+    // let user3 = new User(3,'user3','user_3','user3@gmail.com', 333);
+    // let user4 = new User(4,'user4','user_4','user4@gmail.com', 444);
+    // let user5 = new User(5,'user5','user_5','user5@gmail.com', 555);
+    // let user6 = new User(6,'user6','user_6','user6@gmail.com', 666);
+    // let user7 = new User(7,'user7','user_7','user7@gmail.com', 777);
+    // let user8 = new User(8,'user8','user_8','user8@gmail.com', 888);
+    // let user9 = new User(9,'user9','user_9','user9@gmail.com', 999);
+    // let user10 = new User(10,'user10','user_10','user10@gmail.com', 1000);
+    // let arruser = [user1,user2,user3,user4,user5,user6,user7,user8,user9, user10];
+    //    console.log(arruser);
+
+    //- Взяти масив з  User[] з попереднього завдання, та відфільтрувати ,
+    //   залишивши тільки об'єкти з парними id (filter)
+    // let filter = arruser.filter((value => value.id % 2 === 0))
+    // console.log(filter);
+
+    //- Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+    //  let sort = arruser.sort((value1, value2) => value2.id - value1.id)
+    //  console.log(sort);
+    // відсортував по спаданню
+
+    // створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+    // створити пустий масив, наповнити його 10 об'єктами Client
+    //
+    // class Client{
+    //
+    //     constructor(id, name, surname , email, phone, order) {
+    //         this.id = id;
+    //         this.name = name;
+    //         this.surname = surname;
+    //         this.email = email;
+    //         this.phone = phone;
+    //         this.order = order
+    //     }
+    // }
+    //     let client1 =  new Client(1,'Petya','Pupkin','fgdgdf@gmail.com','06653325978',['ord', 'dadada', 'dadaddggr']);
+    //     let client2 = new Client(2,'Viktoria','Koloskin','gdfdg@gmail.com','06657778963',['ordgg',
+    //         'dadada', 'dadaddggr']);
+    //     let client3 = new Client(3,'Vitia','fdgdfgdgdfdf','fgfdgdgd@gmail.com','0556332878',['ord',
+    //         'dadada', 'dadaddggr', 'qwrrty']);
+    //     let client4 = new Client(4,'Serhij','Jurawlew','jurawlew@gmail.com','055632478',['ord',
+    //         'dadada', ]);
+    //     let client5 = new
+    //     Client(5,'Oleksandr','Petrov','oleksanrPetrow@gmail.com','6445332879',['order5321']);
+    //     let client6 = new Client(6,'Sviatoslav','Neznaju','Svatik@gmail.com','522364780',['ord',
+    //         'dadada', 'dadaddggr', 'qwrrty', '313131,', 'dadadada', 'ffsfsfsfs']);
+    //     let client7 = new
+    //     Client(7,'Volodya','Voloshin','voloshunns1@gmail.com','066332487',['order6i6i6,gfdfgd,chgf']);
+    //     let client8 = new
+    //     Client(8,'Vasya','dsfsdf','vasiaDSF@gmail.com','0554112368',['order83131,sdfsdfdrt']);
+    //     let client9 = new
+    //     Client(9,'Kokos','koks','kokosUserik3@gmail.com','0445887213',['order5500,ghjfghfgh,hgjuyyju,dbff,sfdfg,dfg,ghffh,gfhfghfgfgh']);
+    //     let client10 = new
+    //     Client(10,'Anya','dfdkss','anyaKsS@gmail.com','077896452',['order17979,fdgdfg,dfgdf,tgrt,ufgb,ufhh']);
+    //     let arrclient =
+    //         [client1,client2,client3,client4,client5,client6,client7,client8,client9,client10,];
+    //     console.log(arrclient);
+
+    // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+    // let sort = arrclient.sort((value1, value2) => value1.order.length - value2.order.length)
+    // console.log(sort);
+
+    //- Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель,
+    // виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+    //-- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
+    //-- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+    //-- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+    //-- changeYear (newValue) - змінює рік випуску на значення newValue
+    //-- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів,
+    // і додає його в поточний об'єкт car
+    // function Car(model, producer, year, maxSpeed, engineVolume) {
+    //     this.model = model;
+    //     this.producer = producer;
+    //     this.year = year;
+    //     this.maxSpeed = maxSpeed;
+    //     this.engineVolume = engineVolume
+    //     this.drive = function () {
+    //         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`)
+    //     };
+    //     this.info = function () {
+    //         console.log(`model - ${this.model}
+    //         producer - ${this.producer}
+    //         year - ${this.year}
+    //         maxSpeed - ${this.maxSpeed}
+    //         engineVolume - ${this.engineVolume}
+    //         `)
+    //     }
+    //     this.increaseMaxSpeed = function (newSpeed){
+    // 		this.maxSpeed = newSpeed;
+    // 	}
+    // 	this.changeYear = function (newValue){
+    // 		this.year = newValue;
+    // 	}
+    // 	this.addDriver = function (driver){
+    // 		this.addDriver = driver;
+    // 	}
+    // }
+    //     let car = new Car('Hennessey Venom GT', 'Hennessey Performance Engineering', 2014, 435, 7.1)
+    //     console.log(car);
+    //     car.drive();
+    //     car.info();
+    //     car.changeYear(2010);
+    //     car.addDriver("Oleg");
+    //     car.increaseMaxSpeed(300)
+
+
+    //- (Те саме, тільки через клас)
+    // class Constr{
+    //     constructor(model, producer, year, maxSpeed, engineVolume) {
+    //     this.model = model;
+    //     this.producer = producer;
+    //     this.year = year;
+    //     this.maxSpeed = maxSpeed;
+    //     this.engineVolume = engineVolume}
+    //     drive() {
+    //         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`)
+    //     };
+    //     info () {
+    //         console.log(`model - ${this.model}
+    //     producer - ${this.producer}
+    //     year - ${this.year}
+    //     maxSpeed - ${this.maxSpeed}
+    //     engineVolume - ${this.engineVolume}
+    //     `)
+    //     }
+    //     increaseMaxSpeed = function (newSpeed){
+    //         this.maxSpeed = newSpeed;
+    //     }
+    //     changeYear = function (newValue){
+    //         this.year = newValue;
+    //     }
+    //     addDriver = function (driver){
+    //         this.addDriver = driver;
+    //     }
+    // }
+    // let car = new Constr('Hennessey Venom GT', 'Hennessey Performance Engineering', 2014, 435, 7.1)
+    // console.log(car);
+    // car.drive();
+    // car.info();
+    // car.changeYear(2010);
+    // car.addDriver("Oleg");
+    // car.increaseMaxSpeed(300)
+
+    //-створити класс/функцію конструктор попелюшка з полями
+    //ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+    //Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+    //    За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+    // function Popelushka(name, age,size) {
+    //         this.name = name;
+    //         this.age = age;
+    //         this.size = size;
+    //     }
+    // let arr = [
+    //     new Popelushka('Vika',21,38),
+    //     new Popelushka('Tanya',20,35),
+    //     new Popelushka('Ira',21,37),
+    //     new Popelushka('Katya',19,38),
+    //     new Popelushka('Zosia',22,32),
+    //     new Popelushka('Nastya',23,41),
+    //     new Popelushka('Oksana',21,39),
+    //     new Popelushka('Olya',24,40),
+    //     new Popelushka('Anya',22,42),
+    //     new Popelushka('Masha',21,36)
+    // ]
+    // function prince(name, age,size){
+    //     this.name = name;
+    //     this.age = age;
+    //     this.size = size;
+    // }
+    //     let prince1 = new prince('Oleg',35,41)
+    // for (const girl of arr) {
+    //     if(prince1.size === girl.size){
+    //         console.log(`Це туфелька ${girl.name}`)
+    //     }
+    // }
+
+    //    Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+    //let find = arr.find((value) => value.size === prince1.size)
+    //console.log(find);
+
+</script>
+</body>
+</html>

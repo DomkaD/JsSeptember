@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        p{
+            text-shadow: 2px 2px 3px aqua;
+            font-family: "Trebuchet MS", Verdana, sans-serif;
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            color: black;
+            background: rgb(142,147,139);
+            background: linear-gradient(0deg, rgb(253, 253, 48) 42%, rgb(143, 209, 234) 50%);
+            border: 1px solid black;
+            gap: 10%;
+            font-size: 20px;
+            flex-wrap: wrap;
+        }
+        .postButton{
+            font-size: 35px;
+            width: 80%;
+            margin: 5%;
+            color: black;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,107,9,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        .posts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .post{
+            font-size: 20px;
+            height: 100px;
+            width: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            margin-top: 10px;
+            background: black;
+            color: white;
+        }
+        .post>button{
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,161,70,1) 100%);
+        }
+
+    </style>
+</head>
+<body>
+<div class="user"></div>
+<script src = "user-details.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<style>
+    /*.maincard{*/
+    /*width: 1000px;*/
+    /*height: 700px;*/
+    /*border: solid red 3px;*/
+    /*    margin: 20px;*/
+    /*}*/
+    /*.card{*/
+    /*    text-align: center;*/
+    /*    box-sizing: border-box;*/
+    /*    width: 950px;*/
+    /*    height: 10%;*/
+    /*    margin: 20px;*/
+    /*    border: 2px solid black;*/
+    /*}*/
+    /*.bord2{*/
+    /*    text-align: center;*/
+    /*    box-sizing: border-box;*/
+    /*    width: 950px;*/
+    /*    height: 10%;*/
+    /*    margin: 20px;*/
+    /*    border: 2px solid black;*/
+    /*}*/
+    /*.bord3{*/
+    /*    box-sizing: border-box;*/
+    /*    width: 950px;*/
+    /*    height: 60%;*/
+    /*    margin: 20px;*/
+    /*    border: 2px solid black;*/
+    /*}*/
+    /*.li{*/
+
+    /*}*/
+
+</style>
+
+<body>
+
+<!--<div class="card1">-->
+<!--<div class="card2">-->
+<!--<div class="card3">-->
+<!--<div class="card4">-->
+<!--<div class="card5">-->
+<!--<div class="card6">-->
+
+<script>
+
+    //     let coursesArray = [
+    //         {
+    //             title: 'JavaScript Complex',
+    //             monthDuration: 5,
+    //             hourDuration: 909,
+    //             modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    //         },
+    //         {
+    //             title: 'Java Complex',
+    //             monthDuration: 6,
+    //             hourDuration: 909,
+    //             modules: ['html',
+    //                 'css',
+    //                 'js',
+    //                 'mysql',
+    //                 'mongodb',
+    //                 'angular',
+    //                 'aws',
+    //                 'docker',
+    //                 'git',
+    //                 'java core',
+    //                 'java advanced']
+    //         },
+    //         {
+    //             title: 'Python Complex',
+    //             monthDuration: 6,
+    //             hourDuration: 909,
+    //             modules: ['html',
+    //                 'css',
+    //                 'js',
+    //                 'mysql',
+    //                 'mongodb',
+    //                 'angular',
+    //                 'aws',
+    //                 'docker',
+    //                 'python core',
+    //                 'python advanced']
+    //         },
+    //         {
+    //             title: 'QA Complex',
+    //             monthDuration: 4,
+    //             hourDuration: 909,
+    //             modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    //         },
+    //         {
+    //             title: 'FullStack',
+    //             monthDuration: 7,
+    //             hourDuration: 909,
+    //             modules: ['html',
+    //                 'css',
+    //                 'js',
+    //                 'mysql',
+    //                 'mongodb',
+    //                 'react',
+    //                 'angular',
+    //                 'aws',
+    //                 'docker',
+    //                 'git',
+    //                 'node.js',
+    //                 'python',
+    //                 'java']
+    //         },
+    //         {
+    //             title: 'Frontend',
+    //             monthDuration: 4,
+    //             hourDuration: 909,
+    //             modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    //         }
+    //     ];
+    //
+    //     //Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть
+    //     // зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
+    //
+    // let card1 = document.getElementsByClassName('card1')
+    //     let card1s = card1[0];
+    //
+    // let card2 = document.getElementsByClassName('card1')
+    //     let card2s = card2[0];
+    //
+    // let card3 = document.getElementsByClassName('card1')
+    //     let card3s = card3[0];
+    //
+    // let card4 = document.getElementsByClassName('card1')
+    //     let card4s = card4[0];
+    //
+    // let card5 = document.getElementsByClassName('card1')
+    //     let card5s = card5[0];
+    //
+    // let card6 = document.getElementsByClassName('card1')
+    //     let card6s = card6[0];
+    //
+    // function ada() {
+    //
+    //
+    //     for (const coursesArr of coursesArray) {
+    //         let divcreatemain = document.createElement('div')
+    //         divcreatemain.classList.add('maincard')
+    //         let divcreate = document.createElement('div')
+    //         divcreate.classList.add('card')
+    //         divcreatemain.appendChild(divcreate)
+    //         let titlenam = document.createElement('h2')
+    //         titlenam.innerText = coursesArr.title
+    //         divcreate.appendChild(titlenam)
+    //
+    //         let divcreatenew = document.createElement('div')
+    //         divcreatenew.classList.add('bord2')
+    //         divcreatemain.appendChild(divcreatenew)
+    //         let  monthIhour = document.createElement('h1')
+    //         monthIhour.innerText = "Month: " + coursesArr.monthDuration + " Hour:" +
+    //             coursesArr.hourDuration
+    //         divcreatenew.appendChild(monthIhour)
+    //
+    //         let divcreatelast = document.createElement('div')
+    //         divcreatelast.classList.add('bord3')
+    //         divcreatemain.appendChild(divcreatelast)
+    //
+    //         for (const moduleOf of coursesArr.modules) {
+    //             let  arr = document.createElement('li')
+    //             arr.innerText = moduleOf
+    //             divcreatelast.appendChild(arr)
+    //         }
+    //
+    //         card1s.appendChild(divcreatemain)
+    //         card2s.appendChild(divcreatemain)
+    //         card3s.appendChild(divcreatemain)
+    //         card4s.appendChild(divcreatemain)
+    //         card5s.appendChild(divcreatemain)
+    //         card6s.appendChild(divcreatemain)
+    //     }
+    // }
+    // ada()
+
+
+</script>
+</body>
+</html>

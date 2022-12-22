@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task5</title>
+</head>
+<body>
+<script>
+
+    // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+    // function rectangle(a, b) {
+    // let resOfRect = a * b;
+    // return resOfRect;
+    // }
+    // let y = rectangle(10, 15)
+    // console.log(y)
+
+
+
+    // - створити функцію яка обчислює та повертає площу кола з радіусом r
+    // function circle(r) {
+    // let resOfCirc = Math.PI * (r * r);
+    // return resOfCirc;
+    // }
+    //
+    // let y = circle(12)
+    // console.log(y)
+
+
+
+
+    // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіусом r S(біч.)= 2πRH
+    //  function cylinder(r, h) {
+    // let resOfCyli = 2 * Math.PI * r * h;
+    // return resOfCyli;
+    // }
+    //
+    // let y = cylinder(12, 14)
+    // console.log(y)
+
+
+
+
+    // - створити функцію яка приймає масив та виводить кожен його елемент
+    // let users = [
+    //     {name: 'vasya', age: 31, status: false},
+    //     {name: 'petya', age: 30, status: true},
+    //     {name: 'kolya', age: 29, status: true},
+    //     {name: 'olya', age: 28, status: false},
+    //     {name: 'max', age: 30, status: true},
+    //     {name: 'anya', age: 31, status: false},
+    //     {name: 'oleg', age: 28, status: false},
+    //     {name: 'andrey', age: 29, status: true},
+    //     {name: 'masha', age: 30, status: true},
+    //     {name: 'oksana', age: 31, status: false},
+    //     {name: 'max', age: 31, status: true}
+    // ];
+    // function arrayPrint(array) {
+    //     for (const arrayElement of array) {
+    //         console.log(arrayElement)
+    //     }
+    //
+    // }
+    // arrayPrint(users)
+
+
+
+
+    // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+    //     let words = 'Lorem ipsum dolor sit amet'
+    //     function textPrint(text) {
+    //         document.write(`<p>${text}</p>`)
+    //     }
+    // textPrint(words)
+
+
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+    // function li(liCreator) {
+    //     document.write(`<ul>`)
+    //     for (let i = 0; i < 3 ; i++) {
+    //         document.write(`<li>${liCreator}</li>`)
+    //     }
+    //
+    //     document.write(`</ul>`)
+    // }
+    // li('My name');
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+    // function creatorItems(liCreator, licounter) {
+    //     document.write(`<ul>`)
+    //     for (let i = 0; i < licounter ; i++) {
+    //         document.write(`<li>${liCreator}</li>`)
+    //     }
+    //
+    //     document.write(`</ul>`)
+    // }
+    // creatorItems('My name', 12);
+
+
+
+    // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+    // let items = [20, "hello", true];
+    // function primitiveElem(array) {
+    //     document.write(`<ul>`)
+    //     for (const arrayElement of array) {
+    //         document.write(`<li>${arrayElement}</li>`)
+    //     }
+    //     document.write(`</ul>`)
+    // }
+    // primitiveElem(items)
+
+
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+    // let object = [
+    //     {id: 22, name: "Vasya", age:44 },
+    //     {id: 33, name: "Oleg", age: 51 },
+    //     {id: 126, name: "Ostap", age:39 },
+    //     {id: 15, name: "Roman", age:25 },
+    //     {id: 412, name: "Maks", age:21 },
+    // ]
+    //     function textArray(array) {
+    //         for (let i = 0; i < array.length; i++) {
+    //             document.write(`<div><ul>id ${array[i].id}, name ${array[i].name}, age ${array[i].age}</ul></div>`)
+    //
+    //         }
+    //     }
+    // textArray(object)
+
+    // створити функцію яка повертає найменьше число з масиву
+    // let numbers = [20, 14, 51, 8, 6, 4, 141, 415, 24];
+    // function numbersArray(array) {
+    //     let min = array[0];
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (array[0] > array[i]){
+    //             min = array[i];
+    //         }
+    //
+    //     }
+    //     return min
+    // }
+    //
+    // console.log(numbersArray(numbers));
+
+
+    // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+    // Приклад [1,2,10]->13
+    //
+    // let numbers = [20, 14, 51, 7, 141, 415, 24];
+    // function sumOfnum(array) {
+    // let i = 0;
+    // for (const arrayElement of array) {
+    //     i += arrayElement;
+    // }
+    // return i;
+    // }
+    // console.log(sumOfnum(numbers));
+
+</script>
+
+</body>
+</html>
